@@ -1,6 +1,6 @@
 {
-  "name": "docsify-mustache",
-  "version": "1.0.5",
+  "name": "docsify-mustache-plus",
+  "version": "1.0.6",
   "description": "A Docsify plugin that allow preprocessing markdown documents with Mustache template engine. You can substitute variables in markdown documents using mustache syntax {{variable}} and {{variable.property}}.",
   "main": "dist/docsify-mustache.min.js",
   "files": [
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/docsify-mustache/docsify-mustache.github.io.git"
+    "url": "git+https://github.com/novnan/docsify-mustache.github.io.git"
   },
   "keywords": [
     "docsify",
