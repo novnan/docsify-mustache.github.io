@@ -62,6 +62,17 @@ window.$docsify = {
 }
 ```
 
+### Custom Delimiters
+
+Custom delimiters can be used in place of `{{` and `}}` by setting the new values in JavaScript or in templates.
+```javascript
+window.$docsify = {
+  mustache: {
+    tags: ['<%', '%>']
+  }
+}
+```
+
 ## Documentation
 
 Check the [documentation](https://docsify-mustache.github.io) site for more information.

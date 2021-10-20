@@ -1,11 +1,10 @@
 $docsify.plugins = [].concat($docsify.plugins, function (hook, vm) {
 
-    let render = require("mustache").render;
+    let render;
     let loading = {};
     var onload;
 
     hook.init(function () {
-
         vm.mustache = vm.mustache || {};
 
         var conf = window.$docsify.mustache || {};
@@ -17,10 +16,15 @@ $docsify.plugins = [].concat($docsify.plugins, function (hook, vm) {
         if (conf.data) {
             data(conf.data);
         }
+
+        let mustache = require("mustache");
+        if (Array.isArray(conf.tags)) {
+            mustache.tags = conf.tags;
+        }
+        render = mustache.render;
     });
 
     hook.beforeEach(function (content, next) {
-
         var action = function () {
             var data = {}
 
